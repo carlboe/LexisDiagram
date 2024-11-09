@@ -21,7 +21,7 @@ Thighlight <- function(n=1,col="#00206050",...){
 	    if ((xy$x - lft) > (xy$y - btm)){
 			polygon(c(lft, rght, rght), c(btm, btm, tp), col = col, ...)
 		} else {
-			polygon(c(lft, rght, rght), c(btm, btm, tp), col = col, ...)	
+		        polygon(c(lft, lft, rght),  c(btm, tp,  tp), col=col, ...)
 		}
 	}
 }
